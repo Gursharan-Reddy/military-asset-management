@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: 'http://localhost:5000/api',
+    baseURL: isLocalhost 
+        ? 'http://localhost:5000/api' 
+        : 'https://military-asset-management-n4g9.onrender.com/api',
 });
 
 export default API;
