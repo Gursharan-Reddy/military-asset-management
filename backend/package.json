@@ -1,13 +1,17 @@
 {
-  "name": "backend",
+  "name": "military-asset-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Military Asset Management System Backend",
   "main": "index.js",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "postinstall": "npm rebuild sqlite3 --build-from-source"
   },
   "keywords": [],
-  "author": "",
+  "author": "B Gursharan Reddy",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
