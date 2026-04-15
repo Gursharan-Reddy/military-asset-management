@@ -1,3 +1,4 @@
+// Deployment Check: V1.0.1
 import axios from 'axios';
 
 const isLocalhost = window.location.hostname === 'localhost';
